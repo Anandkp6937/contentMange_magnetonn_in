@@ -1,0 +1,151 @@
+*{
+     padding:0;
+     margin:0;
+     box-sizing:border-box;
+}
+:root{
+     --primary-color:#161D6F;
+     --modal-color:#04061f;
+}
+html{
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+body{
+     font-family: "Open Sans", sans-serif;
+     font-size:16px;
+     text-align: justify;
+     overflow-x: hidden;
+     line-height:30px;
+     /* background-color:var(--primary-color); */
+}
+.header h1{
+     color:var(--primary-color)
+}
+.allsec{
+     margin-top:3em;
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center;
+}
+.form{
+margin-top:3em;
+background-color: #d7e4da;
+width:80%;
+padding:20px 50px;
+font-size:1.3em;;
+height:auto;
+padding-bottom:50px;;
+}
+.formOg{
+     display: flex;
+     flex-direction:column;
+     gap:30px;
+}
+input[type='text']{
+     padding:10px 20px;
+     font-size:0.8em;
+     width:70%;
+}
+#Description{
+     width:70%;
+     height:30vh;
+     padding:20px;
+}
+#subDescription{
+     width:70%;
+     height:25vh;
+     padding:20px;
+     transition:0.5s ease-in-out;
+}
+.formP{
+     padding-bottom: 15px;
+}
+input[type='file']{
+     padding:20px;
+     font-size:0.8em;;
+}
+#upload{
+     padding:10px 20px;
+     font-size:0.8em;
+     border-radius:5px;
+     outline:none;
+     border:1px solid var(--primary-color);
+     width:50%;
+     transition:0.3s;
+     background-color:var(--primary-color);
+     color:#fff;
+}
+#upload:active{
+     transform:scale(0.8);
+}
+.check{
+     display: flex;
+     justify-content:flex-end;
+     align-items: center;
+     cursor:pointer;
+
+}
+.check i{
+     color:var(--primary-color);
+}
+.modelView{
+     background-color: #161D6F;
+     color:#fff;
+     width:80%;
+     height:auto;
+     position: absolute;
+     top:0;
+     left:10%;
+     padding:20px 50px;
+     display:none;
+}
+.checkP{
+     font-weight:bolder;
+     padding-bottom:40px;;
+     
+}
+.enteredTitle{
+     margin-left:30px;
+     font-weight:normal;
+
+}
+.imgC{
+     display: flex;
+     flex-direction: column;
+     padding-bottom:30px;
+}
+.imgC img{
+     width:30%;
+}
+.close{
+     float:right;
+     font-size:2em;
+     cursor: pointer;
+}
+.sub{
+}
+.view{
+     display: flex;
+     align-items: center;
+     gap:50px;
+     padding-bottom:20px;
+
+}
+.expand{
+     background-color:var(--primary-color);
+     padding:10px 20px;
+  
+
+}
+.fa-expand{
+     font-size:1.2em;
+     color:var(--primary-color);
+     color:#fff;
+}
+.btn{
+     padding:10px 20px;
+     background-color:var(--primary-color);
+     color:#fff;
+}
