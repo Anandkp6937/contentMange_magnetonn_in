@@ -5,7 +5,13 @@ const description=document.getElementById('Description');
 const url=document.getElementById('url');
 const catagory=document.getElementById('catagory');
 const upload=document.getElementById('upload');
+const view=document.querySelector('.fa-eye');
+const modal=document.querySelector('.modelView');
 
+view.addEventListener('click',()=>{
+  modal.style.display='block'
+    
+})
 upload.addEventListener('click',(e)=>{
     e.preventDefault();
 
@@ -22,5 +28,6 @@ upload.addEventListener('click',(e)=>{
         headers:{'Content-type':'application/json'},
         body:JSON.stringify(postData)
     })
+    .then(console.log('uploaded'))
     .catch((err)=>console.log(err));
 });

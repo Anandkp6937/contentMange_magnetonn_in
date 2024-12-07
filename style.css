@@ -94,7 +94,7 @@ input[type='file']{
      background-color: #161D6F;
      color:#fff;
      width:80%;
-     height:auto;
+     height:100vh;
      position: absolute;
      top:0;
      left:10%;
