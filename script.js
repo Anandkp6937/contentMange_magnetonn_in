@@ -3,6 +3,7 @@ const createdDate=document.getElementById('createdDate');
 const title=document.getElementById('title');
 const description=document.getElementById('Description');
 const url=document.getElementById('url');
+const imageUrl=document.getElementById('imgUrl');
 const catagory=document.getElementById('catagory');
 const upload=document.getElementById('upload');
 const view=document.querySelector('.fa-eye');
@@ -12,6 +13,7 @@ const titleC=document.querySelector('.titleC');
 const descC=document.querySelector('.descC');
 const catoC=document.querySelector('.cato');
 const urlC=document.querySelector('.urlC');
+const imgURl=document.querySelector('.urlimg');
 const close=document.querySelector('.fa-circle-xmark');
 view.addEventListener('click',()=>{
   modal.style.transform='translateY(0em)';
@@ -20,6 +22,8 @@ view.addEventListener('click',()=>{
   descC.innerHTML=description.value;
   catoC.innerHTML=catagory.value;
   urlC.innerHTML=url.value;
+  urlimg.innerHTML=imageUrl.value;
+
 })
 close.addEventListener('click',()=>{
     modal.style.transform='translateY(-80em)';
@@ -33,12 +37,15 @@ upload.addEventListener('click',(e)=>{
         Title:title.value,
         Description:description.value,
         URL:url.value,
-        Catagory:catagory.value
+        Catagory:catagory.value,
+        Imageurl:imageUrl.value
         }
+        console.log('postData:',postData);
+        
     
     if(confirm(`are you sure want to upload`))
         {
-           
+            
         fetch('https://magnetonn-in-backend.vercel.app/addnewpost',{
                 method:"POST",
                 headers:{'Content-type':'application/json'},
@@ -53,6 +60,8 @@ upload.addEventListener('click',(e)=>{
             description.value=''
             url.value=''
             catagory.value=''
+            imageUrl.value=''
+
     }
    
 
