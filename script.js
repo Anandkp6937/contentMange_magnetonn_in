@@ -40,7 +40,7 @@ upload.addEventListener('click',(e)=>{
         Catagory:catagory.value,
         Imageurl:imageUrl.value
         }
-        console.log('postData:',postData);
+//this data is been sharing to the server
         
     
     if(confirm(`are you sure want to upload`))
